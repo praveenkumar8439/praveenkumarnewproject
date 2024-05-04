@@ -1,0 +1,78 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    background-color: rgb(106, 218, 232);
+    scroll-padding-top: 5.5rem;
+    border-bottom: 5px solid greenyellow;
+
+}
+body{
+    text-align: center;
+}
+nav{
+    background-color: rgb(18, 230, 159);
+    border-bottom: 3px solid brown;
+}
+nav h1{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 50px;
+    color: aliceblue;
+}
+.gridcenter{
+   text-align: -webkit-center;
+
+}
+.cell{
+    width: 120px;
+    height: 100px;
+    padding: 20px;
+    border: 1px solid white;
+    background-color: rgb(205, 219, 245);
+}
+.grid{
+    color: brown;
+    margin-top: 100px;
+    font-size: 50px;
+    display: grid;
+    margin-bottom: 65px;
+    grid-template-columns:repeat(3,auto) ;
+    width: 300px;
+}
+.fote{
+    display: flex;
+    margin: 20px;
+
+}
+#game--status{
+    font-size: xx-large;
+    color: brown;
+}
+#game--restart{
+    padding: 5px;
+    margin-left: auto;
+    border-radius: 6px;
+    border-color: brown;
+}
+
+
+
+
+
+@media screen and (max-width: 950px)
+{
+    .gridcenter{
+        flex-wrap: wrap;
+    }
+    .grid { 
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+}
